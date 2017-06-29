@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.weakref:jmxutils:1.19">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.weakref/jmxutils/1.19/1985ef6b5f6b239beb820e81bcfe70aa86e0ba81/jmxutils-1.19.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.weakref/jmxutils/1.19/e75a64e4896149c160444370064ab502e8a39af8/jmxutils-1.19-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

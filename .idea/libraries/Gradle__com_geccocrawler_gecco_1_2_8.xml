@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.geccocrawler:gecco:1.2.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.geccocrawler/gecco/1.2.8/f48c27083627efab25a4eb860720f47ff71affb0/gecco-1.2.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.geccocrawler/gecco/1.2.8/2df38c9e8d20220a8c58f793cb248c4e14264b21/gecco-1.2.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
