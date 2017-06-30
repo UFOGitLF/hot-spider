@@ -1,10 +1,10 @@
 package com.hacker;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 /**
@@ -12,8 +12,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
  * Created by Lenovo on 2017/6/27.
  */
 @SpringBootApplication
-@ServletComponentScan
-@MapperScan("com.hacker.mapper")
+@EnableAutoConfiguration(exclude = MongoAutoConfiguration.class)
 public class HackerApplication extends SpringBootServletInitializer{
     public static void main(String[] args) {
         SpringApplication.run(HackerApplication.class);

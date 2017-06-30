@@ -6,6 +6,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.quartz.SchedulerFactoryBean;
 
+/**
+ * Description:Quartz配置
+ */
 @Configuration
 public class QuartzConfig {
   @Autowired
