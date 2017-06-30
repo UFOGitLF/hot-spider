@@ -1,4 +1,4 @@
-package com.hacker.config;
+package com.hacker.config.db;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.springframework.boot.context.properties.ConfigurationProperties;
