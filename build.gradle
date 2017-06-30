@@ -41,5 +41,5 @@ dependencies {
     compile('org.mongodb:mongodb-driver:3.0.4')
     //日志
     compile group: 'org.apache.log4j', name: 'com.springsource.org.apache.log4j', version: '1.2.15'
-
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-amqp', version: '1.5.2.RELEASE'
 }

@@ -47,6 +47,7 @@
           <element id="library" level="project" name="Gradle: org.mongodb:mongodb-driver:3.0.4" />
           <element id="library" level="project" name="Gradle: org.mongodb:mongodb-driver-core:3.0.4" />
           <element id="library" level="project" name="Gradle: org.mongodb:bson:3.0.4" />
+          <element id="library" level="project" name="Gradle: org.apache.log4j:com.springsource.org.apache.log4j:1.2.15" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:1.5.3.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:4.3.8.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-web:4.3.8.RELEASE" />
@@ -113,7 +114,13 @@
           <element id="library" level="project" name="Gradle: org.yaml:snakeyaml:1.17" />
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.1.11" />
           <element id="library" level="project" name="Gradle: org.apache.tomcat:tomcat-juli:8.5.11" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.log4j/com.springsource.org.apache.log4j/1.2.15/c506424c00adc6df9a367632c45351fb48e52216/com.springsource.org.apache.log4j-1.2.15.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-amqp/1.5.2.RELEASE/7f02355d347a61d826fc2dbd4dd11705a844943f/spring-boot-starter-amqp-1.5.2.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.amqp/spring-rabbit/1.7.1.RELEASE/eda597bbad2ed7c64d3d6ba07e5d0f698f300e20/spring-rabbit-1.7.1.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-messaging/4.3.7.RELEASE/b9ffd0775ce3fc9e0b09ec2429ca9dbd0da1a5af/spring-messaging-4.3.7.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.amqp/spring-amqp/1.7.1.RELEASE/e9a4c19caee94146b9e0162adee858530472ab6c/spring-amqp-1.7.1.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.retry/spring-retry/1.2.0.RELEASE/4e2b3ea37df07ef6fd905696f1aa5d50128c2782/spring-retry-1.2.0.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rabbitmq/http-client/1.1.1.RELEASE/a3c71766981a70137aa4570e3830c542a7631d3e/http-client-1.1.1.RELEASE.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.rabbitmq/amqp-client/4.0.2/4c26d317131fb409d6a7c57cc4230ac336f0c25/amqp-client-4.0.2.jar" />
         </element>
       </element>
     </root>
