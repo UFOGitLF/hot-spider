@@ -9,8 +9,9 @@ import lombok.Data;
 
 import java.util.List;
 
+@Gecco(matchUrl = "https://list.jd.com/list.html?cat={cat}", pipelines = {"consolePipeline",
+        "filePipeline", "mongoPipeline"})
 @Data
-@Gecco(matchUrl = "https://list.jd.com/list.html?cat={cat}", pipelines = { "consolePipeline", "filePipeline" ,"mongoPipeline"})
 public class ProductList implements HtmlBean {
 
     private static final long serialVersionUID = -6580138290566056728L;
@@ -18,10 +19,9 @@ public class ProductList implements HtmlBean {
     /**
      * 获取请求对象，从该对象中可以获取抓取的是哪个url
      */
-     @Request
-     private HttpRequest request;
+    @Request
+    private HttpRequest request;
 
-    // #plist > ul > li.gl-item > div.j-sku-item
     @HtmlField(cssPath = "#plist > ul > li.gl-item")
     private List<ProductDetail> details;
 

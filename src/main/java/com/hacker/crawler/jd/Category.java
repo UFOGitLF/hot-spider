@@ -6,7 +6,6 @@ import com.geccocrawler.gecco.spider.HrefBean;
 import com.geccocrawler.gecco.spider.HtmlBean;
 import lombok.Data;
 
-import javax.persistence.Entity;
 import java.util.List;
 
 @Data

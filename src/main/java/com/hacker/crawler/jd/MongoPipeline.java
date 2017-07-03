@@ -4,18 +4,23 @@ import com.alibaba.fastjson.JSON;
 import com.geccocrawler.gecco.annotation.PipelineName;
 import com.geccocrawler.gecco.pipeline.Pipeline;
 import com.geccocrawler.gecco.request.HttpRequest;
+import com.hacker.mapper.JpaMapper;
 import com.hacker.utils.MongoDBUtil;
 import com.mongodb.client.MongoCollection;
 import org.bson.Document;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @PipelineName("mongoPipeline")
 public class MongoPipeline implements Pipeline<ProductList> {
+    @Resource
+    private JpaMapper jpaMapper;
+
 
     @Override
     public void process(ProductList productList) {
-        MongoCollection<Document> collection = MongoDBUtil.instance.getCollection("test","jd_spider");
+        MongoCollection<Document> collection = MongoDBUtil.instance.getCollection("test", "jd_spider");
         HttpRequest req = productList.getRequest();
         // 从productList里边获取url，目的是为了从之前存进数据库中找到对应url的小类目
         String url = req.getUrl();
@@ -27,5 +32,7 @@ public class MongoPipeline implements Pipeline<ProductList> {
         // 给添加进去
         collection.updateOne(new Document("categories.url", url),
                 Document.parse("{\"$set\":{\"categories.$.details\":" + jsonString + "}}"));
+
+
     }
 }

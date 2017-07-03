@@ -1,9 +1,6 @@
 package com.hacker.crawler.jd;
 
-import com.geccocrawler.gecco.annotation.Attr;
-import com.geccocrawler.gecco.annotation.HtmlField;
-import com.geccocrawler.gecco.annotation.Image;
-import com.geccocrawler.gecco.annotation.Text;
+import com.geccocrawler.gecco.annotation.*;
 import com.geccocrawler.gecco.spider.HtmlBean;
 import lombok.Data;
 
@@ -18,7 +15,7 @@ public class ProductDetail implements HtmlBean {
     @HtmlField(cssPath = "div.j-sku-item")
     private String pCode;
 
-    @Image({ "data-lazy-img", "src" })
+    @Image({"data-lazy-img", "src"})
     @HtmlField(cssPath = "div.j-sku-item > div.p-img > a > img")
     private String pImg;
 
@@ -41,5 +38,4 @@ public class ProductDetail implements HtmlBean {
     @Text
     @HtmlField(cssPath = "div.j-sku-item > div.p-icons > *")
     private List<String> pIcons;
-
 }

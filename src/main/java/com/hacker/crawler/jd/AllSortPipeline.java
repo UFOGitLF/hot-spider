@@ -12,9 +12,6 @@ import org.bson.Document;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * 第一层pipeline
- */
 @PipelineName("allSortPipeline")
 public class AllSortPipeline implements Pipeline<AllSort> {
 
@@ -25,7 +22,7 @@ public class AllSortPipeline implements Pipeline<AllSort> {
         List<Category> cellPhones = allSort.getCellPhone();
         for (Category category : cellPhones) {
             // 获取mongo的集合
-            MongoCollection<Document> collection = MongoDBUtil.instance.getCollection("test","jd_spider");
+            MongoCollection<Document> collection = MongoDBUtil.instance.getCollection("test", "jd_spider");
             // 把json转成Document
             Document doc = Document.parse(JSON.toJSONString(category));
             // 向集合里边插入一条文档
