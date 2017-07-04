@@ -12,6 +12,7 @@ import java.io.PrintWriter;
 @PipelineName("filePipeline")
 public class FilePipeline implements Pipeline<SpiderBean> {
 
+<<<<<<< HEAD
 	@Override
 	public void process(SpiderBean bean) {
 		try {
@@ -26,4 +27,20 @@ public class FilePipeline implements Pipeline<SpiderBean> {
 			e.printStackTrace();
 		}
 	}
+=======
+    @Override
+    public void process(SpiderBean bean) {
+        try {
+
+            PrintWriter pw = new PrintWriter(new FileWriter("data.txt", true));
+            // pw.println(JSON.toJSONString(bean));
+            pw.println(JSON.toJSONString(bean));
+            pw.flush();
+            pw.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+>>>>>>> dev
 }

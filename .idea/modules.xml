@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/XM-hot-spider_main.iml" filepath="$PROJECT_DIR$/.idea/modules/XM-hot-spider_main.iml" group="hot-spider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/XM-hot-spider_test.iml" filepath="$PROJECT_DIR$/.idea/modules/XM-hot-spider_test.iml" group="hot-spider" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hot-spider.iml" filepath="$PROJECT_DIR$/.idea/modules/hot-spider.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hot-spider_main.iml" filepath="$PROJECT_DIR$/.idea/modules/hot-spider_main.iml" group="hot-spider" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/hot-spider_test.iml" filepath="$PROJECT_DIR$/.idea/modules/hot-spider_test.iml" group="hot-spider" />

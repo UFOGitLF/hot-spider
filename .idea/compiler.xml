@@ -7,6 +7,8 @@
     <bytecodeTargetLevel>
       <module name="hot-spider_main" target="1.8" />
       <module name="hot-spider_test" target="1.8" />
+      <module name="XM-hot-spider_main" target="1.8" />
+      <module name="XM-hot-spider_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

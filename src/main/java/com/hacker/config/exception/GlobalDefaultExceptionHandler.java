@@ -1,4 +1,4 @@
-package com.hacker.config;
+package com.hacker.config.exception;
 
 import com.hacker.exception.BaseException;
 import com.hacker.message.JsonData;

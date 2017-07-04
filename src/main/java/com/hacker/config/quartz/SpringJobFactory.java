@@ -1,4 +1,4 @@
-package com.hacker.config;
+package com.hacker.config.quartz;
 
 import org.quartz.spi.TriggerFiredBundle;
 import org.springframework.beans.factory.annotation.Autowired;

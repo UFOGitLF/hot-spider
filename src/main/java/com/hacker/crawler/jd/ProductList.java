@@ -8,6 +8,7 @@ import com.geccocrawler.gecco.spider.HtmlBean;
 
 import java.util.List;
 
+<<<<<<< HEAD
 /**
  * 商品列表实体类，对应的是京东的类目连接到的页面的每页60条记录
  * @Title ProductList.java
@@ -19,10 +20,16 @@ import java.util.List;
  */
 @Gecco(matchUrl = "https://list.jd.com/list.html?cat={cat}", pipelines = { "consolePipeline",
 		"filePipeline" ,"mongoPipeline"})
+=======
+@Gecco(matchUrl = "https://list.jd.com/list.html?cat={cat}", pipelines = {"consolePipeline",
+        "filePipeline", "mongoPipeline"})
+@Data
+>>>>>>> dev
 public class ProductList implements HtmlBean {
 
 	private static final long serialVersionUID = -6580138290566056728L;
 
+<<<<<<< HEAD
 	/**
 	 * 获取请求对象，从该对象中可以获取抓取的是哪个url
 	 */
@@ -49,4 +56,15 @@ public class ProductList implements HtmlBean {
 		this.details = details;
 	}
 
+=======
+    /**
+     * 获取请求对象，从该对象中可以获取抓取的是哪个url
+     */
+    @Request
+    private HttpRequest request;
+
+    @HtmlField(cssPath = "#plist > ul > li.gl-item")
+    private List<ProductDetail> details;
+
+>>>>>>> dev
 }
